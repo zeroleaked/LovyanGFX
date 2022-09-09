@@ -26,22 +26,24 @@ Contributors:
 #undef setFont
 #endif
 
-#if __has_include("lgfx/v1_init.hpp") && ( defined ( LGFX_USE_V1 ) || !__has_include("lgfx/v0_init.hpp") )
-
  #include "lgfx/v1_init.hpp"
 
- #if defined ( LGFX_AUTODETECT )
 
-  #include "LGFX_AUTODETECT.hpp"
+// #if __has_include("lgfx/v1_init.hpp") && ( defined ( LGFX_USE_V1 ) || !__has_include("lgfx/v0_init.hpp") )
 
- #endif
 
-#else  // if defined ( LGFX_USE_V0 )
+//  #if defined ( LGFX_AUTODETECT )
 
- #if __has_include("lgfx/v0_init.hpp")
-  #include "lgfx/v0_init.hpp"
- #endif
+//   #include "LGFX_AUTODETECT.hpp"
 
-#endif
+//  #endif
+
+// #else  // if defined ( LGFX_USE_V0 )
+
+//  #if __has_include("lgfx/v0_init.hpp")
+//   #include "lgfx/v0_init.hpp"
+//  #endif
+
+// #endif
 
 #endif
